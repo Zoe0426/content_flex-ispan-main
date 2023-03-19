@@ -125,7 +125,7 @@
                     <div class="others-item others-text">
                         <h2 class="title">Lorem ipsum dolor</h2>
                         <p>
-                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit ameㄋ.
                         </p>
                         <div class="others-btn"><a href="">more<i class="fa-solid fa-caret-right right"></i></a></div>
                     </div>
@@ -146,7 +146,13 @@
         const button = document.getElementById("#hambur");
         button.addEventListener("click", function (e) {
             const active = document.querySelector(".links");
-            active.style.display = "block";
+            // active.style.display = "block";
+            let display = active.style.display;
+            if (display === "none") {
+                active.style.display = "block";
+            } else {
+                active.style.display = "none";
+            }
         })
     </script>
 </body>

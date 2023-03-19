@@ -411,6 +411,7 @@ footer p {
 
     .about-img img {
         width: 100%;
+        border-radius: 0;
     }
 
     /* img {
