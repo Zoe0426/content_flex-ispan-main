@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 
 html {
     scroll-padding-top: 60px;
@@ -22,12 +25,16 @@ ul {
     list-style: none;
 }
 
+.title {
+    font-family: 'Abril Fatface', cursive;
+}
+
 .logo {
     display: flex;
     align-items: center;
 }
 
-.logo h1 {
+.logo a {
     background-image: linear-gradient(to right bottom, #845EC2, #D65DB1, #FF6F91, #FF9671, #FFC75F, #F9F871);
     background-clip: text;
     -webkit-background-clip: text;
@@ -159,6 +166,7 @@ ul {
 
 .about-img img {
     width: 600px;
+    border-radius: 10px;
     display: block;
 }
 
@@ -176,7 +184,7 @@ ul {
 .matcha-text h2,
 .others-text h2 {
     margin-bottom: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 
 }
 
@@ -260,12 +268,74 @@ ul {
     justify-content: center;
     padding: 10px;
     border: 2px solid green;
-    text-align: justify;
+    text-align: center;
     border-radius: 10px;
 }
 
 .others-text h2 {
     text-align: center;
+}
+
+.add-cart {
+    position: relative;
+    transition: all .3s ease;
+}
+
+.add {
+    position: absolute;
+    background-image: linear-gradient(to right bottom, #845EC2, #D65DB1, #FF6F91, #FF9671, #FFC75F, #F9F871);
+    width: 100px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    text-transform: capitalize;
+    line-height: 30px;
+    text-align: center;
+    display: none;
+}
+
+.add-cart:hover.add-cart img {
+    opacity: .6;
+    filter: brightness(50%);
+    transition: all .3s ease;
+}
+
+.add-cart:hover .add {
+    display: block;
+
+}
+
+footer {
+    width: 100%;
+
+    background-color: #e5e5e5e5;
+}
+
+.media-icon {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 10px 0;
+}
+
+.media-icon a {
+    position: relative;
+    font-size: 24px;
+    color: #0000007c;
+    margin-right: 10px;
+    bottom: 0;
+    transition: all .3s ease;
+}
+
+.media-icon a:hover {
+    color: #000;
+    bottom: 5px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
 }
 
 
@@ -291,7 +361,9 @@ ul {
     .links {
         margin-top: 3px;
         flex-direction: column;
+        display: none;
     }
+
 
     .hambur {
         display: block;
@@ -323,6 +395,7 @@ ul {
         transform: translate(-50%, -25%);
         padding: 10px;
         border: 8px double #fff;
+        background-color: rgba(0, 0, 0, 0.231);
     }
 
     .container {
@@ -336,10 +409,17 @@ ul {
         margin: 0;
     }
 
-    img {
+    .about-img img {
         width: 100%;
-        height: 100vh;
+    }
 
+    /* img {
+        height: 100vh;
+    } */
+    .coffee-item img,
+    .matcha-item img {
+        height: 100%;
+        display: block;
     }
 
     .about-text {
@@ -376,6 +456,7 @@ ul {
         right: 0;
         margin: 10px;
         padding: 5px 0;
+        background-color: rgba(0, 0, 0, 0.231);
         border: 8px double #fff;
         color: #fff;
     }
@@ -383,11 +464,12 @@ ul {
     .matcha-text {
         position: absolute;
         /* display: block; */
-        width: 45%;
+        width: 50%;
         top: 0;
         left: 0;
         margin: 10px;
         padding: 5px 0;
+        background-color: rgba(0, 0, 0, 0.231);
         border: 8px double #fff;
         color: #fff;
     }
@@ -395,5 +477,35 @@ ul {
     .coffee-text h2,
     .matcha-text h2 {
         margin: 0;
+    }
+
+    .others-item {
+        width: 200px;
+        height: 200px;
+    }
+
+    .others-item img {
+        width: 100%;
+        display: block;
+    }
+
+    .others-item:nth-child(2) {
+        order: 1;
+    }
+
+    .others-item:nth-child(3) {
+        order: 4;
+    }
+
+    .others-item:nth-child(4) {
+        order: 3;
+    }
+
+    .others-item:nth-child(5) {
+        order: 5;
+    }
+
+    .others-item:nth-child(6) {
+        order: 6;
     }
 }

@@ -14,9 +14,9 @@
     <div class="wrap">
         <header class="header">
             <div class="logo">
-                <h1>Gabrielle coffee</h1>
+                <h1><a href="#">Gabrielle coffee</a></h1>
             </div>
-            <div class="hambur"></div>
+            <div class="hambur" id="#hambur"></div>
             <nav class="navbar">
                 <ul class="links">
                     <li><a href="#about">about</a></li>
@@ -37,7 +37,7 @@
             <section id="about">
                 <div class="about-img"><img src="imgs/about.webp" alt=""></div>
                 <div class="about-text">
-                    <h2>More than coffee.</h2>
+                    <h2 class="title">More than coffee.</h2>
                     <p>
                         Chamberlain Coffee is much more than just coffee... Whether you’re new to coffee, a master at
                         matcha, or not quite sure what you like, we have something for every beverage break. At
@@ -58,7 +58,7 @@
                         <li class="coffee-item"><a href="#"><img src="imgs/coffee.webp" alt=""></a></li>
                     </ul>
                     <div class="coffee-text">
-                        <h2>Mason Jars</h2>
+                        <h2 class="title">Mason Jars</h2>
                         <p>
                             Coffee never looked so good.
                         </p>
@@ -69,7 +69,7 @@
             <section id="matcha">
                 <div class="matcha">
                     <div class="matcha-text">
-                        <h2>Matcha</h2>
+                        <h2 class="title">Matcha</h2>
                         <p>
                             Everyone's favorite pick-me-up.
                         </p>
@@ -84,37 +84,71 @@
             </section>
             <section id="others">
                 <div class="others">
-                    <div class="others-item"><img src="imgs/others-1.webp" alt=""></div>
+                    <div class="others-item">
+                        <div class="add-cart">
+                            <a href="#">
+                                <img src="imgs/others-1.webp" alt="">
+                                <div class="add">add to cart</div>
+                            </a>
+                        </div>
+                    </div>
                     <div class="others-item others-text">
-                        <h2>Lorem ipsum dolor</h2>
+                        <h2 class="title">Lorem ipsum dolor</h2>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime suscipit soluta veritatis
-                            totam ad quia optio nobis in officiis ratione?
+                            Lorem ipsum dolor sit amet.
                         </p>
                         <div class="others-btn"><a href="">more<i class="fa-solid fa-caret-right right"></i></a></div>
                     </div>
-                    <div class="others-item"><img src="imgs/others-2.webp" alt=""></div>
+                    <div class="others-item">
+                        <div class="add-cart">
+                            <a href="#">
+                                <img src="imgs/others-2.webp" alt="">
+                                <div class="add">add to cart</div>
+                            </a>
+                        </div>
+                    </div>
                     <div class="others-item others-text">
-                        <h2>Lorem ipsum dolor</h2>
+                        <h2 class="title">Lorem ipsum dolor</h2>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime suscipit soluta veritatis
-                            totam ad quia optio nobis in officiis ratione?
+                            Lorem ipsum dolor sit amet.
                         </p>
                         <div class="others-btn"><a href="">more<i class="fa-solid fa-caret-right right"></i></a></div>
                     </div>
-                    <div class="others-item"><img src="imgs/others-3.webp" alt=""></div>
+                    <div class="others-item">
+                        <div class="add-cart">
+                            <a href="#">
+                                <img src="imgs/others-3.webp" alt="">
+                                <div class="add">add to cart</div>
+                            </a>
+                        </div>
+                    </div>
                     <div class="others-item others-text">
-                        <h2>Lorem ipsum dolor</h2>
+                        <h2 class="title">Lorem ipsum dolor</h2>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime suscipit soluta veritatis
-                            totam ad quia optio nobis in officiis ratione?
+                            Lorem ipsum dolor sit amet.
                         </p>
                         <div class="others-btn"><a href="">more<i class="fa-solid fa-caret-right right"></i></a></div>
                     </div>
                 </div>
             </section>
         </div>
+        <footer>
+            <ul class="media-icon">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+            <p>©2023 Gabrielle Coffee Inc. All Rights Reserved.</p>
+        </footer>
     </div>
+    <script>
+        const button = document.getElementById("#hambur");
+        button.addEventListener("click", function (e) {
+            const active = document.querySelector(".links");
+            active.style.display = "block";
+        })
+    </script>
 </body>
 
 </html>
